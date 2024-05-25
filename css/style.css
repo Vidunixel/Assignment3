@@ -1,0 +1,727 @@
+:root {
+	/* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
+	--primary: #333333;
+	--primaryLight: #ffba43;
+	--secondary: #ffba43;
+	--secondaryLight: #ffba43;
+	--headerColor: #333333;
+	--bodyTextColor: #4e4b66;
+	--bodyTextColorWhite: #fafbfc;
+	/* 13px - 16px */
+	--topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+	/* 31px - 49px */
+	--headerFontSize: 35px;
+	--bodyFontSize: 1rem;
+	/* 60px - 100px top and bottom */
+	--sectionPadding: 57px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+*, *:before, *:after {
+	/* prevents padding from affecting height and width */
+	box-sizing: border-box;
+}
+.cs-topper {
+	font-size: var(--topperFontSize);
+	line-height: 1.2em;
+	text-transform: uppercase;
+	text-align: inherit;
+	letter-spacing: .1em;
+	font-weight: 700;
+	color: var(--primary);
+	margin-bottom: 0.25rem;
+	display: block;
+}
+
+.cs-title {
+	font-size: var(--headerFontSize);
+	font-weight: 900;
+	line-height: 1.2em;
+	text-align: inherit;
+	max-width: 43.75rem;
+	margin: 0 0 1rem 0;
+	color: var(--headerColor);
+	position: relative;
+}
+
+.cs-text {
+	font-size: var(--bodyFontSize);
+	line-height: 1.5em;
+	text-align: inherit;
+	width: 100%;
+	max-width: 40.625rem;
+	margin: 0;
+	color: var(--bodyTextColor);
+}
+
+/*-- -------------------------- -->
+<---          Footer            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#cs-footer-269 {
+		/* 60px - 100px top and bottom */
+		padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+		background-color: #1a1a1a;
+		/* Navigation Links */
+		/* Contact Links */
+	}
+	#cs-footer-269 .cs-container {
+		width: 100%;
+		/* reset on tablet */
+		max-width: 34.375rem;
+		margin: auto;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		/* 68px - 100px */
+		column-gap: clamp(4.25rem, calc(10%), 6.25rem);
+	}
+	#cs-footer-269 .cs-logo-group {
+		/* takes up all the space, lets the other ul's wrap below it */
+		width: 100%;
+		position: relative;
+	}
+	#cs-footer-269 .cs-logo {
+		/* 210px - 240px */
+		width: clamp(13.125rem, 8vw, 15rem);
+		height: auto;
+		display: block;
+		/* 28px - 44px */
+		margin-bottom: clamp(1.75rem, 4.17vw, 2.75rem);
+	}
+	#cs-footer-269 .cs-logo-img {
+		width: 100%;
+		height: auto;
+	}
+	#cs-footer-269 .cs-text {
+		/* 14px - 16px */
+		font-size: clamp(0.875rem, 2.5vw, 1rem);
+		line-height: 1.5em;
+		margin: 0;
+		margin-bottom: 2rem;
+		/* changes to 305px at desktop */
+		max-width: 33.75rem;
+		color: var(--bodyTextColorWhite);
+	}
+	#cs-footer-269 .cs-nav {
+		padding: 0;
+		margin: 0;
+	}
+	#cs-footer-269 .cs-nav-li {
+		list-style: none;
+		line-height: 1.5em;
+		margin-bottom: 0.5rem;
+	}
+	#cs-footer-269 .cs-nav-li:last-of-type {
+		margin-bottom: 0;
+	}
+	#cs-footer-269 .cs-header {
+		font-size: 1rem;
+		line-height: 1.5em;
+		font-weight: 700;
+		margin-bottom: 0.875rem;
+		color: var(--bodyTextColorWhite);
+		position: relative;
+		display: block;
+	}
+	#cs-footer-269 .cs-nav-link {
+		font-size: 1rem;
+		text-decoration: none;
+		line-height: 1.5em;
+		color: var(--bodyTextColorWhite);
+		position: relative;
+	}
+	#cs-footer-269 .cs-nav-link:before {
+		/* underline */
+		content: "";
+		width: 0%;
+		height: 0.125rem;
+		/* current color of the parent */
+		background: currentColor;
+		opacity: 1;
+		position: absolute;
+		display: block;
+		bottom: -0.125rem;
+		left: 0;
+		transition: width 0.3s;
+	}
+	#cs-footer-269 .cs-nav-link:hover:before {
+		width: 100%;
+	}
+	#cs-footer-269 .cs-contact {
+		margin: 0;
+		padding: 0;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		align-self: stretch;
+	}
+	#cs-footer-269 .cs-contact-li {
+		list-style: none;
+		margin-bottom: 0rem;
+	}
+	#cs-footer-269 .cs-contact-li:last-of-type {
+		margin-bottom: 0;
+	}
+	#cs-footer-269 .cs-contact-link {
+		font-size: 1rem;
+		text-decoration: none;
+		line-height: 1.5em;
+		text-align: left;
+		color: var(--bodyTextColorWhite);
+		display: inline-block;
+	}
+	#cs-footer-269 .cs-contact-link:hover {
+		text-decoration: underline;
+	}
+	#cs-footer-269 .cs-address {
+		font-size: 1rem;
+		margin-bottom: 1.25rem;
+	}
+	#cs-footer-269 .cs-social-group {
+		/* pushes away from the other flex items */
+		margin-top: auto;
+		margin-left: auto;
+	}
+	#cs-footer-269 .cs-social {
+		display: inline-flex;
+		justify-content: flex-start;
+		gap: 0.75rem;
+	}
+	#cs-footer-269 .cs-social-link {
+		width: 1.5rem;
+		height: 1.5rem;
+		background-color: #4e4b66;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		z-index: 1;
+		transition:
+				transform 0.3s,
+				background-color 0.3s;
+	}
+	#cs-footer-269 .cs-social-link:hover {
+		background-color: var(--primary);
+		transform: translateY(-0.1875rem);
+	}
+	#cs-footer-269 .cs-social-img {
+		height: 0.8125rem;
+		width: auto;
+		display: block;
+	}
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+	#cs-footer-269 .cs-container {
+		max-width: 80rem;
+		row-gap: 0;
+	}
+	#cs-footer-269 .cs-logo-group {
+		width: auto;
+		/* pushes everything to the right of it as far as possible in a flexbox */
+		margin-right: auto;
+	}
+	#cs-footer-269 .cs-text {
+		width: 80%;
+		max-width: 19.0625rem;
+		margin: 0;
+	}
+	#cs-footer-269 .cs-nav,
+	#cs-footer-269 .cs-contact {
+		/* 8px - 12px */
+		margin-top: clamp(0.5rem, 1.2vw, 0.75rem);
+	}
+}
+
+
+/*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#contact-1388 {
+		padding: var(--sectionPadding);
+		background-color: #575757;
+		background-image: url(../images/backdrop.jpg);
+		background-size: cover;
+		background-position: center;
+		background-blend-mode: overlay;
+		position: relative;
+		z-index: 1;
+		border-bottom: 1px solid #a8a8a8;
+	}
+	#contact-1388 .cs-container {
+		width: 100%;
+		/* changes to 1280px at tablet */
+		max-width: 36.5rem;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		align-items: stretch;
+		flex-direction: column;
+		column-gap: auto;
+		/* 48px - 64px */
+		gap: clamp(2rem, 3vw, 3rem);
+		position: relative;
+	}
+	#contact-1388 .cs-content {
+		/* set text align to left if content needs to be left aligned */
+		text-align: left;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	#contact-1388 .cs-title {
+		max-width: 23ch;
+	}
+	#contact-1388 .cs-text {
+		margin-bottom: 1rem;
+	}
+	#contact-1388 .cs-text:last-of-type {
+		margin-bottom: 2rem;
+	}
+	#contact-1388 .cs-ul {
+		text-align: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1.5rem;
+		position: relative;
+	}
+	#contact-1388 .cs-li {
+		list-style: none;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 1.25rem;
+		padding: 10px;
+	}
+	#contact-1388 .cs-li:hover .cs-icon-wrapper {
+		transform: scale(1.1);
+	}
+	#contact-1388 .cs-header {
+		font-size: 1.25rem;
+		font-weight: 700;
+		line-height: 1.2em;
+		margin-bottom: 0.75rem;
+		color: #ffffff;
+		display: block;
+	}
+	#contact-1388 .cs-link {
+		font-size: 1rem;
+		line-height: 1.5em;
+		text-decoration: none;
+		color: #edf2fa;
+		display: block;
+		position: relative;
+	}
+	#contact-1388 .cs-link:hover {
+		text-decoration: underline;
+	}
+	#contact-1388 .cs-icon-wrapper {
+		width: 3.75rem;
+		height: 3.75rem;
+		margin: 0;
+		border-radius: 50%;
+		border: 1px solid #bababa;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/* prevents flexbox from squishing it */
+		flex: none;
+		transition: transform 0.3s;
+	}
+	#contact-1388 .cs-icon {
+		width: 1.5rem;
+		height: auto;
+		display: block;
+	}
+	#contact-1388 .cs-form {
+		width: 100%;
+		max-width: 39.375rem;
+		/* 24px - 48px top and bottom */
+		/* 16px - 48px left and right */
+		padding: clamp(1.5rem, 5.18vw, 3rem) clamp(1rem, 4vw, 3rem);
+		/* prevents flexbox from affecting height and width */
+		box-sizing: border-box;
+		background-color: #ffffff;
+		border-radius: 1rem;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.75rem;
+	}
+	#contact-1388 .cs-h3 {
+		/* 20px - 39px */
+		font-size: clamp(1.25rem, 3vw, 2.4375rem);
+		line-height: 1.2em;
+		font-weight: 700;
+		margin: 0 0 0.25rem 0;
+		color: #333333;
+	}
+	#contact-1388 .cs-label {
+		/* 14px - 16px */
+		font-size: clamp(0.875rem, 1.5vw, 1rem);
+		width: 100%;
+		color: var(--headerColor);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 0.25rem;
+	}
+	#contact-1388 .cs-input {
+		font-size: 1rem;
+		width: 100%;
+		height: 3.5rem;
+		padding: 0;
+		padding-left: 1.5rem;
+		color: var(--headerColor);
+		background-color: #f7f7f7;
+		border-radius: 0.5rem;
+		border: none;
+		/* prevents padding from adding to height and width */
+		box-sizing: border-box;
+	}
+	#contact-1388 .cs-input::placeholder {
+		color: #7d799c;
+		opacity: 0.6;
+	}
+	#contact-1388 .cs-textarea {
+		min-height: 7.5rem;
+		padding-top: 1.5rem;
+		margin-bottom: 0.75rem;
+		font-family: inherit;
+	}
+	#contact-1388 .cs-button-solid {
+		font-size: 1rem;
+		line-height: 3.5rem;
+		text-decoration: none;
+		font-weight: 700;
+		overflow: hidden;
+		margin: 0;
+		color: #fff;
+		padding: 0 3rem;
+		border-radius: 1.875rem;
+		background-color: var(--primary);
+		display: inline-block;
+		position: relative;
+		z-index: 1;
+		transition: color 0.3s;
+	}
+	#contact-1388 .cs-button-solid:before {
+		content: "";
+		position: absolute;
+		display: block;
+		height: 100%;
+		width: 0%;
+		background: #1a1a1a;
+		opacity: 1;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transition: width 0.3s;
+	}
+	#contact-1388 .cs-button-solid:hover {
+		color: var(--primary);
+	}
+	#contact-1388 .cs-button-solid:hover:before {
+		width: 100%;
+	}
+	#contact-1388 .cs-submit {
+		width: 100%;
+		min-width: 12.5rem;
+		border: none;
+	}
+	#contact-1388 .cs-submit:hover {
+		color: #fff;
+		cursor: pointer;
+	}
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+	#contact-1388 .cs-container {
+		max-width: 80rem;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	#contact-1388 .cs-content {
+		width: auto;
+		/* prevents flexbox from squishing it */
+		flex: none;
+	}
+	#contact-1388 .cs-submit {
+		width: auto;
+	}
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+	#contact-1388 .cs-form {
+		width: 46%;
+		max-width: 36.125rem;
+	}
+	#contact-1388 .cs-submit {
+		width: auto;
+	}
+}
+/* Large Desktop - 1500px */
+@media only screen and (min-width: 93.75rem) {
+	#contact-1388 .cs-graphic {
+		display: block;
+	}
+}
+/***************** end of code stitch *****************/
+
+
+html {
+	background-color: #2d2d2d;
+	background-image: url(../images/background.jpg);
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: overlay;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+body {
+	/*background-color:#ffffff;*/
+	color: #333333;
+	width: 80vw;
+	font-family: "Open Sans", sans-serif;
+	/*border: 20px solid #ffffff;*/
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 35px;
+}
+
+#hero{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 70vh;
+	justify-content: center;
+	overflow: hidden;
+}
+
+#hero img{
+	width: 100%;
+}
+
+#hero a{
+	position: absolute;
+	left: 50%;
+	bottom: 12%;
+	transform: translateX(-50%);
+	background: linear-gradient(142deg, rgba(23,23,23,1) 0%, rgba(32,33,33,1) 100%);
+	color: white;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	font-optical-sizing: auto;
+	font-style: normal;
+	border-radius: 10px;
+	padding: 14px 18px;
+	text-decoration: none;
+	box-shadow: 0px 0px 20px 1px #3d4348;
+	/*border: 1px solid #333333;*/
+}
+
+#cards{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 45vh;
+	justify-content: center;
+	overflow: hidden;
+	border-bottom: 1px solid #a8a8a8;
+}
+
+#cards a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 500;
+	color: white;
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	font-optical-sizing: auto;
+	font-style: normal;
+	padding: 42px;
+}
+
+#cards a div{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 200px;
+	height: 250px;
+	overflow: hidden;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+
+.cards-img{
+	height: 100%;
+}
+
+#cards a div p{
+	color: white;
+	width: 100%;
+	text-align: center;
+	text-justify: distribute;
+	text-decoration: none;
+	font-weight: 500;
+	font-style: italic;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	position: absolute;
+	border-radius: 8px;
+	display: none;
+	bottom: 0;
+	/*text-shadow: 1px 1px #000000;*/
+}
+
+#store_locate{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: center;
+	overflow: hidden;
+	padding-bottom: 77px;
+	padding-top: 77px;
+	border-bottom: 1px solid #a8a8a8;
+}
+
+#content{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#content h3{
+	height: 30px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: "Open Sans", sans-serif;
+	font-size: 35px;
+}
+
+#content div{
+	width: 80%;
+	flex-grow: 1;
+	color: white;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+}
+
+#content div ul{
+	font-weight: lighter;
+	list-style: none;
+	padding: 0;
+	font-size: 17px;
+}
+
+#maps{
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+header {
+	background-color: white;
+	color: #ffffff;
+	height: 95px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 36px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 20px 1px #3d4348;
+	border-color: #333333;
+	border-width: 2px;
+	overflow: hidden;
+	padding: 50px;
+}
+
+nav {
+	border-radius: 15px;
+}
+
+nav a {
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	font-optical-sizing: auto;
+	font-style: normal;
+	padding: 15px;
+}
+
+#login_btn li{
+	margin: 4px;
+}
+
+#login_btn a{
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+main {
+	background: rgba(23,23,23,1);
+	display: flex;
+	flex-direction: column;
+	border-top-right-radius: 35px;
+	border-top-left-radius: 35px;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px 1px black;
+}
+
+footer {
+	background-color: #3d4348;
+	color: #ffffff;
+	padding: 20px;
+	border-bottom-right-radius: 35px;
+	border-bottom-left-radius: 35px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+footer a {
+	color:#99ddff;
+	font-weight: bold;
+}
+
+header h1, header h2 {
+	margin: 0;
+}
